@@ -1,0 +1,6 @@
+* Jarosław Piwnik starszyziutek@o2.pl
+* Plugin'y
+  Opracowanie plugin'u do wybranego środowiska programistycznego (np. Eclipse) lub systemu (np. DataNucleus).
+* Język: Java
+* Praca inżynierska: "Wielozadanowość mikrokontrolerów na bazie układu z rodziny ESP-32"
+* Projekt Programowanie Systemów Rozproszonych: "Odporność na błędy w skalowalnych rozproszonych strukturach danych SDDS"
