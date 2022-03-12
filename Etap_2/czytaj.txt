@@ -1,4 +1,0 @@
-* Utworzony został projekt pierwszej prymitywnej wtyczki typu "Hello , Eclipse" dla Eclipse. Do utworzenia
-  projektu posłużył kreator New Plug-in Project oraz jeden z przykładowych szablonów. Projekt wtyczki został utworzony na podstawie książki
-  "Eclipse 4. Programowanie wtyczek na przykładach",Alex Blewitt, Helion, 2014.
-  Projekt został dodany wraz z całym działającym z nim środowiskiem Eclipse.
