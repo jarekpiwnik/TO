@@ -1,6 +1,5 @@
 * Jarosław Piwnik starszyziutek@o2.pl
-* ?.
-  ?.
-* Język: Java
+* 12. Obiektowe bazy danych
+* Język: Java, Baza danych - db4o
 * Praca inżynierska: "Wielozadanowość mikrokontrolerów na bazie układu z rodziny ESP-32"
 * Projekt Programowanie Systemów Rozproszonych: "Odporność na błędy w skalowalnych rozproszonych strukturach danych SDDS"
