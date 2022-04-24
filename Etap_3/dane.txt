@@ -1,0 +1,3 @@
+* Zainstalowano bazę db4o (dołączono biblioteki)
+* Uruchomiono przykłady w środowisku Eclipse i Intelij
+* Na następny etap napisać część teorii i wybrać temat bazy.

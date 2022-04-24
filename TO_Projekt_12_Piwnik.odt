@@ -1,0 +1,155 @@
+
+
+Politechnika Œwiêtokrzyska w Kielcach
+Wydzia³ Elektrotechniki, Automatyki i Informatyki
+
+Technologie Obiektowe
+
+
+Rok/Semestr:
+
+ 2021/3
+
+
+Temat:
+
+ 
+ Obiektowe bazy danych 
+
+
+Grupa 2IZ2
+
+Jaros³aw Piwnik
+
+Projekt nr:
+12
+
+
+Data wykonania projektu:
+15-04-2022
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Wstêp ...................................................................................……………..................….............. 3 
+2. ObjectDB .......................................................................................................…........….............. 3 
+    2.1 Konfiguracja DB4O ..................……...........................….…….......................…...…..…….. 4    
+    2.2 Utworzenie bazy danych DB4O ................……...…..…........................................…............ 
+    2.3 Modyfikacje obiektów DB4O ........................……......…...................................................... 
+    2.4 Zarz¹dzanie po³¹czeniami DB4O  ..........……............……...........................................  
+    2.5 Zarz¹dzenie baz¹ poprzez ObjectManager .......................……..............................……...... 
+3. MySQL ..............................…..............................................................................................….
+    3.1 Baza danych dla MySQL ..........................................................................................……...
+    3.2 ………………………………………………………………………………………..…….
+4. Testy .............…………........................….....................................…........................................ 
+    4.1 ……………………………………………………………………………………………...
+5. Wnioski .....................................….....................................…...............................………........ 
+Literatura .........................................................................................…….....................................  
+1. Wstêp 
+Celem projektu jest porównanie wydajnoœci relacyjnej bazy danych w tym projekcie bêdzie to MySQL oraz bazy obiektowej DB4O z wykorzysatniem JPA oraz DB4O z wykorzysatniem JDO. 
+Porównanie bêdzie polega³o na sprawdzeniu czasu wymaganego do odczytu konkretnej paczki danych jak równie¿ czasu wymaganego do zapisu w bazie za³o¿onej liczby rekordów. Wykonane zostanie równie¿ porównanie czasu potrzebnego na modyfikacjê rekordów/obiektów w bazie danych oraz czas wymagany do usuniêcia danych. 
+
+2. DB4O 
+	Myœl¹c "przechowywanie danych" w kontekœcie aplikacji komputerowych prawie na pewno myœlimy "relacyjna baza danych i mapowanie obiektowo-relacyjne". Bazy danych, które s¹ dojrza³ymi i niezawodnymi produktami zapewniaj¹ nam trwa³e przechowywanie danych. Natomiast rozwi¹zania typu ORM umo¿liwiaj¹ nam dostêp do tych danych w postaci u¿ytecznej dla programów napisanych w sposób obiektowy. Podejœcie to zosta³o spopularyzowane przez framework Hibernate a nastêpnie ustandaryzowane jako Java Persistence API stanowi¹ce element specyfikacji Java EE 5.
+Podejœcie takie izoluje w du¿ym stopniu projektanta/programistê od czynnoœci zwi¹zanych z relacyjnymi bazami danych (takimi jak zak³adanie indeksów, rozmiary kolumn itp.) Jednak w przypadku bardziej z³o¿onych aplikacji kod w obiektowym jêzyku programowania zostaje "zaœmiecony" pewnymi elementami relacyjnymi, np. adnotacjami JPA; @Column, @ManyToMany.
+Obiektowa baza danych
+Alternatyw¹ mog¹ byæ obiektowe bazy danych. Obiekty s¹ w nich przechowywane tak, jak u¿ywamy ich w programach napisanych zgodnie z paradygmatem obiektowym. Nie trzeba ich mapowaæ na model relacyjny ani modelowaæ takich podstawowych zale¿noœci jak dziedziczenie i kompozycja.
+Nie mog¹ one jeszcze zagroziæ pozycji relacyjnych baz danych, jednak warto przyjrzeæ siê mo¿liwoœciom, jakie oferuj¹. Db4o jest baz¹ danych dostêpn¹ na platformy Java i .NET. Mo¿emy jej u¿ywaæ na licencji GPL oraz komercyjnej.
+
+
+
+
+
+3
+
+2.1 Konfiguracja DB4O
+	Instalacja sprowadza siê do œci¹gniêcia paczki ze wszystkimi niezbêdnymi komponentami. PóŸniej nale¿y tylko dodaæ odpowiedni plik JAR do zmiennej CLASSPATH (np. dla db4o w wersji 7.4 i javy 1.5 - db4o-7.4.121.14026-java5.jar).
+Mo¿na równie¿ dodaæ db4o jako zale¿noœæ w projektach zarz¹dzanych przez Mavena, odpowiednie artefakty znajduj¹ siê pod adresem http://source.db4o.com/maven. Nastêpnie rozpakowujemy bazê danych do wybranego katalogu np.: C:\db4o. Bêdziemy korzystaæ ze œrodowiska programistycznego Eclipse ( mo¿na korzystaæ z innego), które mo¿na œci¹gn¹æ st¹d: http://www.eclipse.org/downloads/
+Nastêpnie rozpakowujemy archiwum Eclipse i uruchamiamy klikaj¹c na eclipse.exe. Jako workspace wpisujemy C:\workspace i klikamy OK. Tworzymy nowy projekt klikaj¹c na File->New->Java Project. Nazywamy go db4o OK. Nastêpnie klikamy prawym klawiszem myszy na nasz projekt i wybieramy properties. Klikamy na czwart¹ od góry zak³adkê Java Build Path i mamy nastêpuj¹ce okno:
+
+
+Teraz wybieramy zak³adkê Libraries oraz na Add External Jars. Wybieramy bibliotekê 7.2.44.10827-java5.jar klikamy OK i zamykamy okno. Widok do³¹czonego pliku Jar przedstawia poni¿szy rysunek.
+
+4
+
+2.2. Utworzenie bazy danych
+	Baza danych db4o sk³ada siê z jednego pliku. Gdy odwo³ujemy siê do nieistniej¹cej bazy, jest ona automatycznie tworzona. Praca z baz¹ odbywa siê przez obiekt ObjectContainer
+Na pocz¹tku stworzymy prost¹ klasê o nazwie Person. Klikamy prawym klawiszem myszy na nasz projekt i nastêpnie na new->Class. W oknie które siê pojawi w pole Package wpisujemyexemple, a w pole Name wpisujemy Person. Wype³niamy cia³o klasy w nastêpuj¹cy sposób:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5
+Tworzymy drug¹ klasê CompleteExample i wype³niamy j¹ jak poni¿ej.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6
+Przed uruchomieniem bazy nale¿y utworzyæ katalog  C:/myDb/myDb.yap.
