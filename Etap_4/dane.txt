@@ -1,0 +1,7 @@
+* wybrano bazę World
+
+* połączono się z bazą MySql
+
+*  na następny utworzyć bazę world db4o w konfiguracji klient - serwer
+
+* napisać część dalszą teorii

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45ff133e-e5b4-4806-a4b4-b1f7addd4d5c" name="Changes" comment="">
+    <list default="true" id="45ff133e-e5b4-4806-a4b4-b1f7addd4d5c" name="Changes" comment="db4o klient serwer">
       <change afterPath="$PROJECT_DIR$/../MySQL/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../MySQL/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../MySQL/.idea/jarRepositories.xml" afterDir="false" />
@@ -23,12 +23,18 @@
       <change afterPath="$PROJECT_DIR$/../MySQL/src/main/java/entity/Person.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../MySQL/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../MySQL/src/main/resources/hibernate.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySQL/target/classes/MySQL.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/db4o/model/other_class/Continentenum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/db4o/model/other_class/Isofficjalenum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/db4o/model/other_class/Continentenum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/db4o/model/other_class/Isofficjalenum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/world.db4o" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../WORLD_MySql/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../WORLD_MySql/src/main/java/Main.java" afterDir="false" />
     </list>
@@ -37,20 +43,72 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="28VRKD179FRAJyfWcuQUoL95sVu" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/db4o-7.2-java/db4o-7.2/lib" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="org.db4o.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Klient">
+    <configuration name="Klient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.db4o.model.Klient.Klient" />
+      <module name="WORLD_Db4o" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.db4o.model.Server.Server" />
+      <module name="WORLD_Db4o" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.db4o.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Klient" />
+        <item itemvalue="Application.Server" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -60,11 +118,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651299703570</updated>
-      <workItem from="1651299707717" duration="1223000" />
+      <workItem from="1651299707717" duration="30469000" />
+      <workItem from="1652630275243" duration="324000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="db4o klient serwer" />
+    <option name="LAST_COMMIT_MESSAGE" value="db4o klient serwer" />
   </component>
 </project>
