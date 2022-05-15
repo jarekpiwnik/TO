@@ -4,39 +4,167 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45ff133e-e5b4-4806-a4b4-b1f7addd4d5c" name="Changes" comment="db4o klient serwer">
-      <change afterPath="$PROJECT_DIR$/../MySQL/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySQL/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySQL/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySQL/.idea/jpa-buddy-datasource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySQL/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySQL/.idea/libraries/Hibernate_5_4_11_5_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySQL/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySQL/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySQL/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySQL/.jpb/persistence-units.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySQL/META-INF/orm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySQL/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySQL/MySQL.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySQL/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySQL/src/main/java/MysqlConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySQL/src/main/java/entity/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySQL/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MySQL/src/main/resources/hibernate.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/db4o/model/other_class/Continentenum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/db4o/model/other_class/Isofficjalenum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/db4o/model/other_class/Continentenum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/db4o/model/other_class/Isofficjalenum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/world.db4o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WORLD_MySql/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WORLD_MySql/src/main/java/Main.java" afterDir="false" />
+    <list default="true" id="45ff133e-e5b4-4806-a4b4-b1f7addd4d5c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Etap_4/dane.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/lib/FastInfoset-1.2.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/lib/antlr-2.7.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/lib/byte-buddy-1.10.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/lib/classmate-1.5.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/lib/dom4j-2.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/lib/hibernate-commons-annotations-5.1.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/lib/hibernate-core-5.4.11.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/lib/istack-commons-runtime-3.0.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/lib/jandex-2.1.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/lib/javassist-3.24.0-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/lib/javax.activation-api-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/lib/javax.persistence-api-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/lib/jaxb-api-2.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/lib/jaxb-runtime-2.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/lib/jboss-logging-3.3.2.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/lib/stax-ex-1.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/lib/txw2-2.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/target/classes/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/target/classes/MysqlConnection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/target/classes/entity/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySQL/target/classes/hibernate.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/db4o/model/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/db4o/model/Klient/Klient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/db4o/model/Server/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/db4o/model/Server/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/db4o/model/Server/Countrylanguage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/db4o/model/Server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/db4o/model/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/db4o/model/Config.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/db4o/model/Klient/Klient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/db4o/model/Server/Country.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/db4o/model/Server/Countrylanguage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/db4o/model/Server/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/db4o/model/Util.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WORLD_MySql/.idea/libraries/mysql_connector_java_8_0_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WORLD_MySql/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../WORLD_MySql/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WORLD_MySql/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WORLD_MySql/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__javax_el_javax_el_api_3_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__javax_enterprise_cdi_api_2_0_SP1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__javax_interceptor_javax_interceptor_api_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__org_hibernate_hibernate_core_5_5_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__org_javassist_javassist_3_27_0_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__org_jboss_jandex_2_2_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WORLD_MySql/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WORLD_MySql/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WORLD_MySql/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/BASE_WORLD.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/src/main/java/MysqlConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/src/main/java/entity/City.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/src/main/java/entity/Country.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/src/main/java/entity/Countrylanguage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/src/main/java/entity/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BASE_WORLD/src/main/resources/hibernate.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/MySQL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../MySQL/MySQL.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/CityEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/CountryEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/CountrylanguageEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/PersonEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/com/dbmysql/pack/MysqlConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/com/dbmysql/pack/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/com/dbmysql/pack/PersonEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/hibernate.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MySQL/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/main/java/MysqlConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MySQL/src/main/java/MysqlConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/main/java/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MySQL/src/main/java/entity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MySQL/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/main/resources/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../MySQL/src/main/resources/hibernate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/org/dbobject/model/CityEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/org/dbobject/model/CountryEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/org/dbobject/model/CountrylanguageEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/src/org/dbobject/model/CountrylanguageEntityPK.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySQL/target/classes/MySQL.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/db4o/model/Server/Pilot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/db4o/model/City.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/db4o/model/Country.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/db4o/model/Countrylanguage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/db4o/model/other_class/Continentenum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/db4o/model/other_class/Continentenum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/db4o/model/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/db4o/model/Server/City.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/db4o/model/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/db4o/model/Server/Pilot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/db4o/model/Countrylanguage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/db4o/model/other_class/Continentenum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/db4o/model/other_class/Continentenum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/db4o/model/other_class/Isofficjalenum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/db4o/model/other_class/Isofficjalenum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/db4o/model/otherclass/Isofficjalenum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/world.db4o" beforeDir="false" afterPath="$PROJECT_DIR$/world.db4o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WORLD_MySql/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WORLD_MySql/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WORLD_MySql/src/CityEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WORLD_MySql/src/CountryEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WORLD_MySql/src/CountrylanguageEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WORLD_MySql/src/com/company/MysqlConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WORLD_MySql/src/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WORLD_MySql/src/hibernate.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WORLD_MySql/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WORLD_MySql/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WORLD_MySql/src/org/dbsql/model/CityEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WORLD_MySql/src/org/dbsql/model/CountryEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WORLD_MySql/src/org/dbsql/model/CountrylanguageEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WORLD_MySql/src/org/dbsql/model/CountrylanguageEntityPK.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +247,7 @@
       <option name="presentableId" value="Default" />
       <updated>1651299703570</updated>
       <workItem from="1651299707717" duration="30469000" />
-      <workItem from="1652630275243" duration="324000" />
+      <workItem from="1652630275243" duration="925000" />
     </task>
     <servers />
   </component>
