@@ -2,6 +2,12 @@ package org.db4o.model.Klient;
 
 import org.db4o.model.other_class.*;
 
+import lombok.Data;
+import lombok.AllArgsConstructor;
+
+@Data
+@AllArgsConstructor
+
 public class Countrylanguage {
 
     private String countryCode;
@@ -9,6 +15,9 @@ public class Countrylanguage {
     private Isofficjalenum isOfficial;
     private float percentage;
 
+    @Override
+    public String toString() {return countryCode + " " + language + " " + isOfficial + " " + percentage;}
+  /*
     public Countrylanguage(String countryCode, String language, Isofficjalenum isOfficial, float percentage) {
         this.countryCode = countryCode;
         this.language = language;
@@ -47,5 +56,5 @@ public class Countrylanguage {
 
     public String toString() {
         return countryCode + " " + language + " " + isOfficial + " " + percentage;
-    }
+    }*/
 }

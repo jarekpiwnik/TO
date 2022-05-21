@@ -7,7 +7,7 @@
     <session-factory>
         <!-- Database connection settings -->
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/test?serverTimezone=UTC</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/world?serverTimezone=UTC</property>
         <!--property name="connection.username">username</property-->
         <!--property name="connection.password">password</property-->
 
@@ -18,6 +18,9 @@
         <property name="hbm2ddl.auto">validate</property>
 
         <!-- Names the annotated entity class -->
-        <mapping class="entity.Person"/>
+        <!--mapping class="entity.Person"/-->
+        <mapping class="entity.City"/>
+        <mapping class="entity.Countrylanguage"/>
+        <mapping class="entity.Country"/>
     </session-factory>
 </hibernate-configuration>

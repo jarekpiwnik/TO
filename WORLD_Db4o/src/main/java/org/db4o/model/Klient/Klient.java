@@ -3,10 +3,9 @@ package org.db4o.model.Klient;
 import com.db4o.Db4o;
 import com.db4o.ObjectContainer;
 import com.db4o.ObjectSet;
-import org.db4o.model.Config;
-import org.db4o.model.Server.Pilot;
-import org.db4o.model.Util;
-import static org.db4o.model.Config.*;
+import org.db4o.model.other_class.Util;
+
+import static org.db4o.model.other_class.Config.*;
 
 public class Klient {
     public static void main(String[] args) {
@@ -17,14 +16,15 @@ public class Klient {
         ObjectContainer db = Db4o.openClient(HOST, PORT, USERNAME, PASSWORD);
 
         try {
-            storeFirstPilot(db);
-            storeSecondPilot(db);
+           // storeFirstPilot(db);
+           // storeSecondPilot(db);
             retrieveAllPilots(db);
-            retrievePilotByName(db);
-            retrievePilotByExactPoints(db);
+           // retrievePilotByName(db);
+           // retrievePilotByExactPoints(db);
             updatePilot(db);
-            deleteFirstPilotByName(db);
-            deleteSecondPilotByName(db);
+           // deleteFirstPilotByName(db);
+           // deleteSecondPilotByName(db);
+            //server.close();
         }
         finally {
             db.close();
@@ -32,7 +32,7 @@ public class Klient {
     }
 
     public static void accessDb4o() {
-        ObjectContainer db=Db4o.openFile(Config.PATH_TO_DB4O_FILE);
+        ObjectContainer db=Db4o.openClient(HOST, PORT, USERNAME, PASSWORD);
         try {
             // do something with db4o
         }
@@ -61,7 +61,7 @@ public class Klient {
 
     public static void retrieveAllPilots(ObjectContainer db) {
         ObjectSet result=db.queryByExample(Pilot.class);
-        //listResult(result);
+        Util.listResult(result);
     }
 
     public static void retrievePilotByName(ObjectContainer db) {
@@ -79,7 +79,7 @@ public class Klient {
     public static void updatePilot(ObjectContainer db) {
         ObjectSet result=db.queryByExample(new Pilot("Michael Schumacher",0));
         Pilot found=(Pilot)result.next();
-        found.addPoints(11);
+        found.setPoints(11);
         db.store(found);
         // System.out.println("Added 11 points for "+found);
         //retrieveAllPilots(db);

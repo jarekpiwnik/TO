@@ -1,47 +1,59 @@
 import entity.*;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.boot.Metadata;
-import org.hibernate.boot.MetadataSources;
-import org.hibernate.boot.registry.StandardServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import org.hibernate.cfg.Configuration;
 
 import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
 import javax.persistence.Query;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
-
     public static void main(String[] args) {
-        SessionFactory sessionFactory = null;
+        MysqlConnection mysqlConnection = new MysqlConnection();
+        EntityManager em = mysqlConnection.getEntityManager();
+
+        Query q10 = em.createQuery("SELECT c FROM Country c");
+        ArrayList<Country> res10 = (ArrayList<Country>) q10.getResultList();
+        Util.listResult(res10);
+
+        Query q20 = em.createQuery("SELECT c FROM City c");
+        ArrayList<City> res20 = (ArrayList<City>) q20.getResultList();
+        Util.listResult(res20);
+
+        Query q30 = em.createQuery("SELECT c FROM Countrylanguage c");
+        ArrayList<Countrylanguage> res30 = (ArrayList<Countrylanguage>) q30.getResultList();
+        //Util.listResult(res30);
+        res30.forEach(System.out::println);
+
+        //res10.forEach(Country -> {
+        //do something with Person instance...
+        // System.out.println(res10);
+        // });
+////////////////////////////////////////////////////////////////////
+        //   SessionFactory sessionFactory = null;
 // configures settings from hibernate.cfg.xml
-        StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
-        try {
-            sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
-        } catch (Exception e) {
-            // handle the exception
-            System.out.println(e);
-        }
+        //  StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
+        //  try {
+        //      sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
+        // } catch (Exception e) {
+        // handle the exception
+        //     System.out.println(e);
+        // }
 
-        Session session = sessionFactory.openSession();
-        session.beginTransaction();
+        //  Session session = sessionFactory.openSession();
+        //  session.beginTransaction();
 
-        List<Person> result = session.createQuery("from Person", Person.class).list();
+        // List<Person> result = session.createQuery("from Person", Person.class).list();
+        // List<City> result = session.createQuery("from City ", City.class).list();
+        // List<Countrylanguage> result = session.createQuery("from Countrylanguage ", Countrylanguage.class).list();
+        // List<Country> result = session.createQuery("from Country ", Country.class).list();
+        // result.forEach(Country -> {
+        //do something with Person instance...
+        //     System.out.println(result);
+        // });
 
-        result.forEach(person -> {
-            //do something with Person instance...
-            System.out.println(result);
-        });
+        // session.getTransaction().commit();
+        // session.close();
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        session.getTransaction().commit();
-        session.close();
-
-
-       // MysqlConnection mysqlConnection = new MysqlConnection();
+        // MysqlConnection mysqlConnection = new MysqlConnection();
     /*    EntityManager em = mysqlConnection.getEntityManager();
 
         System.out.println("Zapytanie - SELECT c FROM Country c limit 1 -");

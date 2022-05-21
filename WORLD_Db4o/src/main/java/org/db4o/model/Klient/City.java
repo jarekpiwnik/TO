@@ -1,5 +1,11 @@
 package org.db4o.model.Klient;
 
+import lombok.Data;
+import lombok.AllArgsConstructor;
+
+@Data
+@AllArgsConstructor
+
 public class City {
     private int id;
     private int population;
@@ -7,6 +13,9 @@ public class City {
     private String countryCode;
     private String district;
 
+    @Override
+    public String toString() {return id + " " + name + " " + countryCode + " " + district + " " + population;}
+/*
     public City(int id, String name,String countryCode, String district, int population) {
         this.id=id;
         this.name=name;
@@ -41,7 +50,6 @@ public class City {
 
     public int getPopulation() {return population;}
     public void setPopulation(int id) { this.population=population;}
+*/
 
-    public String toString() {
-        return id + " " + name + " " + countryCode + " " + district + " " + population;}
 }
