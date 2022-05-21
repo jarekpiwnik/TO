@@ -1,4 +1,4 @@
-package org.db4o.model.Server;
+package org.db4o.model.Klient;
 
 public class City {
     private int id;

@@ -1,4 +1,4 @@
-package org.db4o.model;
+package org.db4o.model.other_class;
 
 import com.db4o.ObjectContainer;
 import com.db4o.ObjectSet;

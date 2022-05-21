@@ -1,4 +1,4 @@
-package org.db4o.model;
+package org.db4o.model.other_class;
 
 public class Config {
     public final static String PATH_TO_DB4O_FILE = "world.db4o";

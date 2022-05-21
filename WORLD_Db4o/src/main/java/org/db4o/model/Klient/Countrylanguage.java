@@ -1,4 +1,4 @@
-package org.db4o.model.Server;
+package org.db4o.model.Klient;
 
 import org.db4o.model.other_class.*;
 
@@ -35,7 +35,7 @@ public class Countrylanguage {
     public Isofficjalenum getIsOfficial() {
         return isOfficial;
     }
-    //  public void setIsOfficial(Isofficjalenum isOfficial) {this.isOfficial=isOfficial;}
+    public void setIsOfficial(Isofficjalenum isOfficial) {this.isOfficial=isOfficial;}
 
     public float getPercentage() {
         return percentage;
